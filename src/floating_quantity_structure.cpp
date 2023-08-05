@@ -62,7 +62,8 @@ void FloatingQuantityStructure::buildUI() {
   setEnabled(currEnabled);
 
   // Do any structure-specific stuff here
-  this->buildCustomUI();
+  // omit redraw for external
+  // this->buildCustomUI();
 
   // Build quantities list, in the common case of a QuantityStructure
   this->buildQuantitiesUI();
